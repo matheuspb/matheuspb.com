@@ -1,65 +1,47 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div>
+      <head>
+        <title>Matheus Bittencourt</title>
+      </head>
+      
+      <body>
+        <h2>Matheus Bittencourt</h2>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+        <p>
+          I'm a software developer, see my profiles below.
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <p>
+          <ul>
+            <li>GitHub profile:
+              <a href="https://github.com/matheuspb">
+                @matheuspb
+              </a>
+            </li>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+            <li>Linkedin:
+              <a href="https://br.linkedin.com/in/matheus-bittencourt">
+                Matheus Bittencourt
+              </a>
+            </li>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+            <li>Lattes:
+              <a href="http://lattes.cnpq.br/8903412953257044">
+                lattes.cnpq.br/8903412953257044
+              </a>
+            </li>
+          </ul>
+        </p>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+        <p>Contact:<ul>
+          <li>matheus.spb at grad.ufsc.br</li>
+          <li>bittencourt.matheus at gmail.com</li>
+          <li>
+            <a href='https://telegram.me/matheuspb'>telegram.me/matheuspb</a>
+          </li>
+        </ul></p>
+      </body>
     </div>
   )
 }
