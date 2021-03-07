@@ -8,6 +8,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import GithubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import MailIcon from '@material-ui/icons/Mail'
+import Image from 'next/image'
 
 const useStyles = makeStyles({
   container: {
@@ -17,12 +18,10 @@ const useStyles = makeStyles({
     marginTop: 50,
   },
   image: {
-    width: 150,
-    height: 150,
     borderRadius: '50%',
   },
   name: {
-    marginTop: 20,
+    marginTop: 30,
   },
   subtitle: {
     color: 'gray',
@@ -30,7 +29,7 @@ const useStyles = makeStyles({
   iconsContainer: {
     display: 'flex',
     flexDirection: 'row',
-    marginTop: 30,
+    marginTop: 35,
   },
   icon: {
     color: 'black',
@@ -57,7 +56,14 @@ const Home: React.FunctionComponent = () => {
 
   return (
     <Box className={styles.container}>
-      <img className={styles.image} src='/me.jpg' alt='me' />
+      <Image
+        className={styles.image}
+        src='/me.jpg'
+        alt='me'
+        width={180}
+        height={180}
+        priority
+      />
       <Typography className={styles.name} variant='h4'>
         Matheus Bittencourt
       </Typography>
