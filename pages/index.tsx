@@ -5,12 +5,12 @@ const Home: React.FunctionComponent = () => (
     <head>
       <title>Matheus Bittencourt</title>
     </head>
-    
+
     <body>
       <h2>Matheus Bittencourt</h2>
 
       <p>
-        I'm a software developer, see my profiles below.
+        I&apos;m a software developer, see my profiles below.
       </p>
 
       <p>

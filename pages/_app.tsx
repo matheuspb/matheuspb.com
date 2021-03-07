@@ -3,8 +3,8 @@ import { AppProps } from 'next/app'
 
 const App: React.FunctionComponent<AppProps> = ({
   Component,
-  pageProps,
-}) => (
+  pageProps
+}: AppProps) => (
   <Component {...pageProps} />
 )
 
