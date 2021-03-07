@@ -25,16 +25,12 @@ const useStyles = makeStyles({
   name: {
     marginTop: 30,
   },
-  subtitle: {
-    color: 'gray',
-  },
   iconsContainer: {
     display: 'flex',
     flexDirection: 'row',
     marginTop: 35,
   },
   icon: {
-    color: 'black',
     margin: '0px 5px 0px 5px',
   },
 })
@@ -68,11 +64,12 @@ const Home: React.FunctionComponent = () => {
         height={180}
         priority
       />
-      <Typography className={styles.name} variant='h4'>
+      <Typography className={styles.name} color='textPrimary' variant='h4'>
         Matheus Bittencourt
       </Typography>
-      <Typography className={styles.subtitle}>
-        I&apos;m a software developer at <Link href='https://ae.studio'>AE Studio</Link>
+      <Typography color='textSecondary'>
+        I&apos;m a software developer at{' '}
+        <Link href='https://ae.studio' color='secondary'>AE Studio</Link>
       </Typography>
       <Box className={styles.iconsContainer}>
         {icons.map(({ Icon, url }, key) => (
@@ -80,6 +77,7 @@ const Home: React.FunctionComponent = () => {
             key={key}
             onClick={() => router.push(url)}
             className={styles.icon}
+            color='primary'
           >
             <Icon />
           </IconButton>
