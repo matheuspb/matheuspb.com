@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 const App: React.FunctionComponent<AppProps> = ({
   Component,
-  pageProps
+  pageProps,
 }: AppProps) => (
   <>
     <Head>

@@ -21,7 +21,8 @@
     ],
     "rules": {
         "quotes": ["error", "single"],
-        "jsx-quotes": ["error", "prefer-single"]
+        "jsx-quotes": ["error", "prefer-single"],
+        "comma-dangle": ["error", "always-multiline"]
     },
     "settings": {
         "react": {

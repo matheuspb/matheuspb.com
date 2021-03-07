@@ -1,43 +1,78 @@
 import React from 'react'
+import {
+  Box,
+  Link,
+  Typography,
+} from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles'
+import GithubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import MailIcon from '@material-ui/icons/Mail'
 
-const Home: React.FunctionComponent = () => (
-  <div>
-    <h2>Matheus Bittencourt</h2>
+const useStyles = makeStyles({
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    marginTop: 50,
+  },
+  image: {
+    width: 150,
+    height: 150,
+    borderRadius: '50%',
+  },
+  name: {
+    marginTop: 20,
+  },
+  subtitle: {
+    color: 'gray',
+  },
+  iconsContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    marginTop: 30,
+  },
+  icon: {
+    color: 'black',
+    margin: '0px 5px 0px 5px',
+  },
+})
 
-    <p>
-      I&apos;m a software developer, see my profiles below.
-    </p>
+const Home: React.FunctionComponent = () => {
+  const styles = useStyles()
+  const icons = [
+    {
+      Icon: GithubIcon,
+      url: 'https://github.com/matheuspb',
+    },
+    {
+      Icon: LinkedInIcon,
+      url: 'https://linkedin.com/in/matheus-bittencourt/',
+    },
+    {
+      Icon: MailIcon,
+      url: 'mailto:bittencourt.matheus@gmail.com',
+    },
+  ]
 
-    <p>
-      <ul>
-        <li>GitHub profile:{' '}
-          <a href="https://github.com/matheuspb">
-            @matheuspb
-          </a>
-        </li>
-
-        <li>Linkedin:{' '}
-          <a href="https://br.linkedin.com/in/matheus-bittencourt">
-            Matheus Bittencourt
-          </a>
-        </li>
-
-        <li>Lattes:{' '}
-          <a href="http://lattes.cnpq.br/8903412953257044">
-            lattes.cnpq.br/8903412953257044
-          </a>
-        </li>
-      </ul>
-    </p>
-
-    <p>Contact:<ul>
-      <li>matheus.spb at grad.ufsc.br</li>
-      <li>bittencourt.matheus at gmail.com</li>
-      <li>
-        <a href='https://telegram.me/matheuspb'>telegram.me/matheuspb</a>
-      </li>
-    </ul></p>
-  </div>
-)
+  return (
+    <Box className={styles.container}>
+      <img className={styles.image} src='/me.jpg' alt='me' />
+      <Typography className={styles.name} variant='h4'>
+        Matheus Bittencourt
+      </Typography>
+      <Typography className={styles.subtitle}>
+        I&apos;m a software developer at <Link href='https://ae.studio'>AE Studio</Link>
+      </Typography>
+      <Box className={styles.iconsContainer}>
+        {icons.map(({ Icon, url }, key) => (
+          <Link key={key} href={url}>
+            <Icon className={styles.icon} />
+          </Link>
+        ))}
+      </Box>
+    </Box>
+  )
+}
 
 export default Home
