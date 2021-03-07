@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   Box,
-  IconButton,
+  Button,
   Link,
   Typography,
 } from '@material-ui/core'
@@ -10,7 +10,6 @@ import GithubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import MailIcon from '@material-ui/icons/Mail'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
 
 const useStyles = makeStyles({
   container: {
@@ -28,15 +27,14 @@ const useStyles = makeStyles({
   iconsContainer: {
     display: 'flex',
     flexDirection: 'row',
-    marginTop: 35,
+    marginTop: 40,
   },
   icon: {
-    margin: '0px 5px 0px 5px',
+    margin: '0px 12px 0px 12px',
   },
 })
 
 const Home: React.FunctionComponent = () => {
-  const router = useRouter()
   const styles = useStyles()
 
   const icons = [
@@ -73,14 +71,15 @@ const Home: React.FunctionComponent = () => {
       </Typography>
       <Box className={styles.iconsContainer}>
         {icons.map(({ Icon, url }, key) => (
-          <IconButton
+          <Button
             key={key}
-            onClick={() => router.push(url)}
+            href={url}
             className={styles.icon}
             color='primary'
+            variant='contained'
           >
             <Icon />
-          </IconButton>
+          </Button>
         ))}
       </Box>
     </Box>
