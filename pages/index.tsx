@@ -44,7 +44,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       Icon: LinkedInIcon,
-      url: 'https://linkedin.com/in/matheus-bittencourt/',
+      url: 'https://linkedin.com/in/matheus-bittencourt/?locale=en_US',
     },
     {
       Icon: MailIcon,
