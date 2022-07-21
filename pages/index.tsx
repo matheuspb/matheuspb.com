@@ -67,7 +67,7 @@ const Home: React.FunctionComponent = () => {
       </Typography>
       <Typography color='textSecondary'>
         I&apos;m a software developer at{' '}
-        <Link href='https://ae.studio' color='secondary'>AE Studio</Link>.
+        <Link href='https://withleaf.io/' color='secondary'>Leaf</Link>.
       </Typography>
       <Box className={styles.iconsContainer}>
         {icons.map(({ Icon, url }, key) => (
