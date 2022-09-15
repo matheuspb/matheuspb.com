@@ -16,18 +16,16 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    marginTop: 50,
+    height: '100vh',
   },
   image: {
     borderRadius: '50%',
   },
-  name: {
-    marginTop: 30,
-  },
   iconsContainer: {
     display: 'flex',
     flexDirection: 'row',
-    marginTop: 40,
+    alignItems: 'start',
+    height: 180,
   },
   icon: {
     margin: '0px 12px 0px 12px',
@@ -54,6 +52,7 @@ const Home: React.FunctionComponent = () => {
 
   return (
     <Box className={styles.container}>
+      <Box flex={1} />
       <Image
         className={styles.image}
         src='/me.jpg'
@@ -62,13 +61,15 @@ const Home: React.FunctionComponent = () => {
         height={180}
         priority
       />
-      <Typography className={styles.name} color='textPrimary' variant='h4'>
+      <Box height='30px' />
+      <Typography color='textPrimary' variant='h4'>
         Matheus Bittencourt
       </Typography>
       <Typography color='textSecondary'>
         I&apos;m a software developer at{' '}
         <Link href='https://withleaf.io/' color='secondary'>Leaf</Link>.
       </Typography>
+      <Box height='30px' />
       <Box className={styles.iconsContainer}>
         {icons.map(({ Icon, url }, key) => (
           <Button
@@ -82,6 +83,7 @@ const Home: React.FunctionComponent = () => {
           </Button>
         ))}
       </Box>
+      <Box flex={1} />
     </Box>
   )
 }
