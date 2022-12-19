@@ -9,7 +9,6 @@ import { makeStyles } from '@material-ui/core/styles'
 import GithubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import MailIcon from '@material-ui/icons/Mail'
-import Image from 'next/image'
 
 const useStyles = makeStyles({
   container: {
@@ -53,13 +52,12 @@ const Home: React.FunctionComponent = () => {
   return (
     <Box className={styles.container}>
       <Box flex={1} />
-      <Image
+      <img
         className={styles.image}
-        src='/me.jpg'
+        src='/api/me'
         alt='me'
         width={180}
         height={180}
-        priority
       />
       <Box height='30px' />
       <Typography color='textPrimary' variant='h4'>
