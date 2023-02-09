@@ -46,7 +46,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       Icon: MailIcon,
-      url: 'mailto:bittencourt.matheus@gmail.com',
+      url: 'mailto:me@matheuspb.com',
     },
   ]
 
