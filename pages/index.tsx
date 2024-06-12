@@ -4,11 +4,11 @@ import {
   Button,
   Link,
   Typography,
-} from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles'
-import GithubIcon from '@material-ui/icons/GitHub'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import MailIcon from '@material-ui/icons/Mail'
+} from '@mui/material'
+import { makeStyles } from '@mui/styles'
+import GithubIcon from '@mui/icons-material/GitHub'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import MailIcon from '@mui/icons-material/Mail'
 import Image from 'next/image'
 
 const useStyles = makeStyles({
