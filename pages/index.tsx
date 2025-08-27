@@ -66,8 +66,10 @@ const Home: React.FunctionComponent = () => {
         Matheus Bittencourt
       </Typography>
       <Typography color='textSecondary'>
-        I&apos;m a software developer at{' '}
-        <Link href='https://withleaf.io/' color='secondary'>Leaf</Link>.
+        I&apos;m a software engineer at{' '}
+        <Link href='https://www.mercadolivre.com.br/' color='secondary'>
+          Mercado Livre
+        </Link>.
       </Typography>
       <Box height='30px' />
       <Box className={styles.iconsContainer}>
