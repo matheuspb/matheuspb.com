@@ -67,8 +67,8 @@ const Home: React.FunctionComponent = () => {
       </Typography>
       <Typography color='textSecondary'>
         I&apos;m a software engineer at{' '}
-        <Link href='https://www.mercadolivre.com.br/' color='secondary'>
-          Mercado Livre
+        <Link href='https://groundswell.io/' color='secondary'>
+          Groundswell
         </Link>.
       </Typography>
       <Box height='30px' />
