@@ -1,4 +1,4 @@
-import React from 'react'
+import type { FunctionComponent } from 'react'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
@@ -15,7 +15,7 @@ const theme = createTheme({
   },
 })
 
-const App: React.FunctionComponent<AppProps> = ({
+const App: FunctionComponent<AppProps> = ({
   Component,
   pageProps,
 }: AppProps) => (

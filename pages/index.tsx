@@ -1,4 +1,4 @@
-import React from 'react'
+import type { FunctionComponent } from 'react'
 import {
   Box,
   Button,
@@ -32,7 +32,7 @@ const useStyles = makeStyles({
   },
 })
 
-const Home: React.FunctionComponent = () => {
+const Home: FunctionComponent = () => {
   const styles = useStyles()
 
   const icons = [
